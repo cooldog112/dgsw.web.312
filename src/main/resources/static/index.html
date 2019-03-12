@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+    <form method="get" action="/greeting">
+        <input name="say">
+        <input name="to">
+        <button>SUBMIT</button>
+    </form>
+    <div>
+        <input id="say" placeholder="인사말">
+        <input id="to" placeholder="이름">
+        <button onclick="send()">SUBMIT</button>
+        <script>
+            function send() {
+                let say=${"#say"}.val();
+            }
+        </script>
+    </div>
+</body>
+</html>
