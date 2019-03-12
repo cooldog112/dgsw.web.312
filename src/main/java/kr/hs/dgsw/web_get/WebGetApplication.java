@@ -9,5 +9,4 @@ public class WebGetApplication {
     public static void main(String[] args) {
         SpringApplication.run(WebGetApplication.class, args);
     }
-
 }
